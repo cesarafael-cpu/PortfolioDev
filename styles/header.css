@@ -1,60 +1,62 @@
 header {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /*centraliza os textos*/
+  
+  /* fundo do background header */
+  background-image: url(../assets/images/Background_Intro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  
+  /* tamanho do background header */
+  width: 100%;
+  height: 750px;
+  
+  .avatar {
+    
+    /*tamanho total do círculo vermelho*/
+    width: 96px;
+    border-radius: 50%; /*forma o círculo na foto*/
+    
+    /*borda vermelha*/
+    border: 3px solid var(--red-color);
+    
+    /* centralização */
+    display: flex; /* preenche o círculo com a foto*/
     align-items: center;
-    text-align: center; /*centraliza os textos*/
-
-    /* fundo do background header */
-    background-image: url(../assets/images/Background_Intro.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-    /* tamanho do background header */
-    width: 100%;
-    height: 750px;
-
-    .avatar {
-
-      /*tamanho total do círculo vermelho*/
-      width: 96px;
-      border-radius: 50%; /*forma o círculo na foto*/
-
-      /*borda vermelha*/
-      border: 3px solid var(--red-color);
-
-      /* centralização */
-      display: flex; /* preenche o círculo com a foto*/
-      align-items: center;
-      justify-content: center;
-
-      position: relative;
-
-      margin: 120px auto 56px;
-      /* cima | laterais | baixo */
-    }
-
-
-    .avatar-img img {
-      width: 87.27px;
-      height: 87.27px;
-      border-radius: 50%;
-      overflow: hidden;
-      object-fit: cover; /*não deixa a foto esticada ou espremida*/
-    }
-
-    .avatar-tag {
-      position: absolute; /*posição absoluta para colocar a tag no canto do círculo*/
-      bottom: -10px;
-      right: -10px;
+    justify-content: center;
+    
+    position: relative;
+    
+    margin: 120px auto 56px;
+    /* cima | laterais | baixo */
+  }
+  
+  
+  .avatar-img img {
+    width: 87.27px;
+    height: 87.27px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover; /*não deixa a foto esticada ou espremida*/
+  }
+  
+  .avatar-tag {
+    position: absolute; /*posição absoluta para colocar a tag no canto do círculo*/
+    bottom: -10px;
+    right: -10px;
   }
 }
 
 .container {
-  width: 680px;
-  height: 327px;
-  display: flex; /*organiza os elementos em uma direção — linha ou coluna*/
+  width: 100%;
+  display: flex;
   flex-direction: column;
+  /* align-self: stretch; */
+  /* align-items: center; */
+  /* justify-self: center; */
 }
 
 /* Espaçamento entre parágrafos */
@@ -69,6 +71,68 @@ header {
 .text-sm {
   margin-top: 20px;
 }
+
+.container-tags {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  gap: 16px;
+  width: 100%;
+  
+}
+
+.container-tags img {
+  filter: invert(1);
+}
+
+/* definindo cores de cada ícone */
+.container-tags .icon-github {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7494%) hue-rotate(319deg) brightness(88%) contrast(128%);
+}
+
+.container-tags .icon-html {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(99%) saturate(5870%) hue-rotate(7deg) brightness(89%) contrast(116%);
+}
+
+.container-tags .icon-css {
+  filter: brightness(0) saturate(100%) invert(24%) sepia(37%) saturate(4860%) hue-rotate(214deg) brightness(96%) contrast(92%);
+}
+
+.container-tags .icon-javascript {
+  filter: brightness(0) saturate(100%) invert(82%) sepia(21%) saturate(6707%) hue-rotate(15deg) brightness(102%) contrast(101%);
+}
+
+.container-tags .icon-react {
+  filter: brightness(0) saturate(100%) invert(24%) sepia(37%) saturate(4860%) hue-rotate(214deg) brightness(96%) contrast(92%);
+}
+
+.container-tags .icon-nodejs {
+ filter: brightness(0) saturate(100%) invert(65%) sepia(97%) saturate(467%) hue-rotate(75deg) brightness(98%) contrast(120%);
+}
+
+.icon-item {
+  padding: 8px 16px;
+  display: flex;
+  /* width: 100%; */
+  gap: 8px;
+  /* width: 100% */
+  height: 40px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  font: var(--text-md);
+}
+
+.arrow {
+  padding: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 
 

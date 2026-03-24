@@ -34,4 +34,11 @@
   --text-sm: 400 14px/140% var(--font-family-maven-pro);
 }
 
+a:hover {
+  color: var(--purple-color);
+}
+
+
+
+
 
