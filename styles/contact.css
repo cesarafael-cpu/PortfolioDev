@@ -1,0 +1,13 @@
+.contact {
+  background-image: url('../assets/images/Background_Contacts.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: 48rem;
+}
+
+header {
+  margin-top: 8rem;
+  /* margin-bottom: 3rem; */
+}
+  
