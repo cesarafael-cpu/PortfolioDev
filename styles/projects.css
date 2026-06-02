@@ -10,8 +10,7 @@ body {
 .grid {
   margin-top: 56px;
   display: flex;
-  display: flex; /* preenche o círculo com a foto*/
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
     
@@ -25,7 +24,27 @@ body {
   gap: 24px;
   display: grid;
 }
-  
+
+.card {
+  background-color: var(--gray-400);
+  border-radius: 1rem;
+  padding: 24px;
+  text-align: left;
+}
+
+.card img {
+  border-radius: 1rem;
+}
+
+.card-content p {
+  margin-top: 24px;
+  margin: 8px 0;
+}
+
+
+
+
+
 
 
   

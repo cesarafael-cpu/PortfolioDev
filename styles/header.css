@@ -2,7 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; /*centraliza os textos*/
+  text-align: center;
   
   /* fundo do background header */
   background-image: url(../assets/images/Background_Intro.png);
@@ -17,15 +17,13 @@ header {
   .avatar {
     
     /*tamanho total do círculo vermelho*/
-    width: 96px;
-    border-radius: 50%; /*forma o círculo na foto*/
+    border-radius: 50%;
     
     /*borda vermelha*/
     border: 3px solid var(--red-color);
     
     /* centralização */
-    display: flex; /* preenche o círculo com a foto*/
-    align-items: center;
+    display: flex; 
     justify-content: center;
     
     position: relative;
