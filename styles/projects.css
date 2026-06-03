@@ -1,20 +1,17 @@
 body {
-  /* margin: 0; */
-  /* padding: 0; */
-  /* box-sizing: border-box; */
+  margin: 0;
   background-color: var(--gray-500);
-  /* display: grid; */
-  text-align: center; 
+  text-align: center;
 }
-  
+
 .grid {
   margin-top: 56px;
   display: flex;
   /* align-items: center; */
   justify-content: center;
 }
-    
-  
+
+
 .projects {
   margin-top: 88px;
 }
@@ -47,4 +44,3 @@ body {
 
 
 
-  

@@ -1,16 +1,33 @@
-.links {
+footer {
   display: grid;
-  justify-content: center;
   align-items: center;
+  gap: 1.5rem;
+}
 
-  gap: 1rem;
+button {
+  background: var(--gray-400);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   width: 25rem;
-  height: 20rem;
+  height: 4.25rem;
+  padding: 1rem 1rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  justify-self: center;
+  color: var(--gray-100);
 }
 
-.button {
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 4.25rem;
+button img {
+  margin-left: auto;
 }
+
+button span {
+  margin-right: 14rem;
+}
+
+
+
+  
+
+
